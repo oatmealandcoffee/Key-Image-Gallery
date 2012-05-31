@@ -1,0 +1,83 @@
+Project: Key Image Gallery
+Author(s): Philip Regan
+Source Code Copyright: Copyright (c) 2012 Philip Regan All Rights Reserved.
+Additional Copyright: Output Copyright (c) 2012 Jones & Bartlett Learning
+Source:	New source only; no adaptations.
+Requirements: HTML5/CSS/JS
+Notes:
+
+Road map:
+X Key Features
+	X Search
+		X add search form to index.html
+		X capture search terms
+		X create search algorithm
+			X split terms into words
+			- split string by term or...
+			X ...regex
+		X push to search results page
+		X display results
+			- split results by chapter?
+	X Chapters
+		X Add chapter title array
+			X track chapter number (because chapters may not be sequential)
+			X track chapter title
+			X track chapter author (contributed texts)
+		X Display chapter titles
+			X index.html
+			X chapter_n.html
+		X Inter-chapter navigation
+	X CSS
+		X Add divs to layout components (see Kristin first)
+
+Known Bugs
+* NONE
+
+Change History:
+    12_05_18_01_00_000: Started source
+    12_05_18_01_00_001: Added initial architecture documentation
+    					Added initial src files
+    12_05_18_01_00_002:	Added blank js and css
+    12_05_18_01_00_003:	Added full size view html file
+    					Added scaffolding and to dos
+    12_05_18_01_00_004:	Added core current functionality from sample
+    					Updated HTML to properly link
+    					Added sample chapter files
+    12_05_18_01_00_005: Fixed bug in where full view was not appearing
+    12_05_18_01_01_000: Code migration complete
+    					Added variables to top of engine code to better manage image-related values
+    					Added FPO full and thumb images
+    					Updated content array to point to FPOs
+    12_05_18_01_01_001:	Added search infrastructure
+    12_05_18_01_01_002:	Added initial code to sanitizeSearchTerms
+    					Added search brainstorm
+    12_05_21_01_01_003:	Added basic search functionality
+    12_05_21_01_01_004:	Fixed search to use reg ex for more accurate hits
+    12_05_21_01_01_005:	Added result index sorting
+    12_05_21_01_01_006:	Added result duplicate removal
+    12_05_21_01_01_007:	Updated 'search' to 'searchPrep'
+    					Added basic string check to ensure we have a proper string
+    12_05_22_01_02_000:	Updated chapter table generation to be modular to accomodate search results display
+    					Added initial search results display code
+    12_05_22_01_02_001:	Updated sample content store to something more generic
+    					Updated searchWithResults to handle no results gracefully
+    12_05_22_01_02_002:	Updated searchWithResults to generate thumbnail table
+    12_05_22_01_02_003:	Updated searchWithResults to search within confines of content array but still has problems
+    					Fixed bug where thumbs were not linking to the full size images properly
+    12_05_22_01_02_004:	Updated searchWithResults with refactored index offsets for more reliable search
+    12_05_22_01_02_005:	Fixed remaining bugs in search, now returns predictable results
+    12_05_22_01_02_006:	Added navigation from chapter and search results to index page
+    12_05_22_01_02_007:	Updated navigation so that all pages are UI aligned
+    12_05_23_01_02_008:	Updated array offsets to be more descriptive
+    12_05_23_01_03_000:	Added dynamic chapter index creation
+    12_05_23_01_03_001:	Updated dynamic chapter index creation to switch index.html link on and off
+    					Updated all HTML files to handle the new function profile
+    12_05_23_01_04_000:	Updated engine and html with needed classes for CSS
+    12_05_23_01_04_001:	Updated engine such that all content gets are done in one function
+    12_05_24_01_04_002:	Fixed bug where thumbnail tables were not being generated
+    					Fixed bug where full size image was not being placed
+    12_05_24_01_04_003:	Fixed bug where full size metadata was not being placed
+    12_05_24_01_04_004:	Updated sample content to real-world content and not contrived example
+    12_05_24_01_04_005:	Updated engine to comply with initial spec
+    12_05_24_01_04_006:	Updated index.htm to capture enter key to initiate search
+    12_05_24_01_04_007:	Updated index.htm so that IE works the button the same as all the other browsers

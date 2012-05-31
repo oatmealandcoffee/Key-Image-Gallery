@@ -1,0 +1,86 @@
+body {
+	text-align: left;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.mainLayoutTable {
+	padding: 3px;
+	max-width: 640px;
+	min-width: 588px;
+	width: 588px;
+
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.fullViewTableLayout {
+	padding: 3px;
+        max-width: 1000px;
+	min-width: 494px;
+
+	border-width: 1px;
+	border-color: #000000;
+	border-style: solid;
+
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.keyFigureReviewInformation {
+	/*
+	border-width: 1px;
+	border-style: dashed;
+	*/
+}
+
+.chapterLabel {
+	/*
+	border-width: 1px;
+	border-color: #66ffcc;
+	border-style: dashed;
+	*/
+	font-size: 13pt;
+	font-weight: bold;
+}
+
+.figureTable {
+	/*
+	border-width: 1px;
+	border-color: #66ccff;
+	border-style: dashed;
+	*/
+}
+
+.figureTableCell {
+	border-color: #bfbfbf;
+	border-width: 1px;
+	border-style: solid;
+	width: auto;
+	text-align: left;
+}
+
+.figureThumbnailImage {
+	text-align: left;
+	border: 3px ridge  Gray;
+}
+
+.figureThumbnailCallout {
+	text-align: left;
+	/*
+	border-width: 1px;
+	border-color: #ff6fcf;
+	border-style: dashed;
+	*/
+}
+
+.figureThumbnailTitle
+{
+    font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color:  #666666
+}

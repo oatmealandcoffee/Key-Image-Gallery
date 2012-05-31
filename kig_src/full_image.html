@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+
+	<title>Key Image Gallery: Chapter n</title>
+
+	<link rel=stylesheet type="text/css" href="kig_styles.css" media=screen>
+	<script type="text/javascript" src="kig_engine.js"></script>
+
+</head>
+<body>
+
+<noscript>Javascript must be enabled to use this component.</noscript>
+
+<!-- Main Table Layoutw START -->
+<table class="fullViewTableLayout">
+	<tr valign=top>
+		<td width="38%">
+			<b><script type="text/javascript">document.write( getImageContentAtIndexAndOffset( getIndexFromURL(document.location.href) , kOffsetImageCallout , false ));</script></b><br />
+			<script type="text/javascript">document.write( getImageContentAtIndexAndOffset( getIndexFromURL(document.location.href) , kOffsetImageTitle , false ));</script><br />
+			<script type="text/javascript">document.write( getImageContentAtIndexAndOffset( getIndexFromURL(document.location.href) , kOffsetImageCaption , false ));</script><br />
+			<script type="text/javascript">document.write( getImageContentAtIndexAndOffset( getIndexFromURL(document.location.href) , kOffsetImageCredit , false ));</script><br />
+		</td>
+
+		<td class="keyFigureReviewInformation">
+
+		<noscript><img src="sampleImage.jpg" alt="sample image alt" width=100 /></noscript>
+		<script type="text/javascript">
+				document.write('<center><img src="' + getImageContentAtIndexAndOffset( getIndexFromURL(document.location.href), kOffsetImageFilename, false ) + '"/></center>');
+		</script>
+		</td>
+	</tr>
+</table>
+
+<center><form method="post"><input type="button" value="Close Window" onclick="window.close()"></form></center>
+
+<!-- Main Table Layout END -->
+</body>
+</html>

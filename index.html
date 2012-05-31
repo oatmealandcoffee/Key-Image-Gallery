@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Key Image Gallery: Start</title>
+
+	<link rel=stylesheet type="text/css" href="kig_styles.css" media=screen>
+	<script type="text/javascript" src="kig_engine.js"></script>
+	<!--capture enter key in search field to initiate search-->
+
+	<script type="text/javascript">
+		document.onkeypress = processKey;
+		function processKey(e)
+		{
+		  if (null == e)
+			e = window.event ;
+		  if (e.keyCode == 13)  {
+			prepSearch( document.getElementById('searchInput').value );
+		  }
+		}
+	</script>
+
+</head>
+<body>
+	<noscript>Javascript must be enabled to use this component.</noscript>
+
+    <!-- Chapter Index -->
+	<script type="text/javascript">
+		document.write( createChapterLinkIndexWithExclusion( kNoChapterIndexExclusion, false ) );
+	</script>
+
+	<!-- Search Form -->
+	<label for="searchTerms">Search titles and captions:</label>
+	<input type="text" name="searchTerms" id="searchInput" value="" placeholder=""/>
+	<button type="button" onmouseup="javascript: prepSearch( document.getElementById('searchInput').value )" id="searchButton">Search</button>
+
+</body>
+</html>
